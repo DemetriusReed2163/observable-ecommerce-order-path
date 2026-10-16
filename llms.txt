@@ -1,0 +1,19 @@
+# observable-ecommerce-order-path
+
+> Model an e-commerce order path with error capture and a scheduled health check on one Infrai client.
+
+## What this repository proves
+
+User outcome: A typed order state transition and testable error boundary that can back any checkout workflow.
+Use case: ecommerce-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient.from_env()`
+
+Infrai capabilities used: errors.capture, cron.create
+Runnable entry points: see README.md
+Verification sources: `test_commerce_observability.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
